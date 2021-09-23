@@ -1,0 +1,7 @@
+@mixin caja ($ancho, $margin, $background, $color, $borde) {
+    width: $ancho;
+    margin: $margin;
+    background-color: $background;
+    color: $color;
+    border: $borde;
+}

@@ -1,0 +1,25 @@
+.gridNosotros {
+    display: grid;
+    grid-template-columns: 40% auto ;
+    grid-template-rows: repeat(3, auto);  
+    grid-template-areas: "tituloNos tituloNos"
+                         "carrusel  textoNos"
+                         "carrusel  textoNos";
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 5vh;
+}
+#subtNosotros {
+    grid-area: tituloNos;
+    font-size: 35px;
+}
+#textoNosotros {
+    grid-area: textoNos;
+    font-size: 20px;
+}
+.carruselNos {
+    grid-area: carrusel;
+}
+.carousel {
+    margin-right: 0;
+}

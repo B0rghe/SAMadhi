@@ -1,0 +1,42 @@
+@media only screen and (max-width: 600px) {
+    .navNotebook {
+        display: none;
+    }
+    @import "_mobile/index";
+    @import "_mobile/clases";
+    @import "_mobile/infoyoga";
+    @import "_mobile/nosotros";
+}
+
+@media only screen and (min-width: 600px) and (max-width: 991px){
+    .navNotebook {
+        display: none;
+    }
+    .whatsapp {
+        width: 75px;
+    }
+    @import "_tablet/index";
+    @import "_tablet/clases";
+    @import "_tablet/infoyoga";
+    @import "_tablet/nosotros";
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-item {
+        text-align: left;
+    }
+    .navResponsive {
+        display: none;
+    }
+    .whatsapp {
+        width: 90px;
+    }
+    .offcanvas {
+        background-color: $colorNav;
+        color: $colorBack;
+    }
+    @import "_desktop/index";
+    @import "_desktop/clases";
+    @import "_desktop/infoyoga";
+    @import "_desktop/nosotros";
+}

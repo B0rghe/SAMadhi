@@ -1,0 +1,67 @@
+.inscripcion {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "nombre    inNombre"
+                         "apellido  inApellido"
+                         "telefono  inTelefono"
+                         "mail      inMail"
+                         "seleccion seleccion"
+                         "modo      modo"
+                         "cantidad  cantidad"
+                         ".         enviar";
+    justify-items: center;
+    align-items: center;     
+
+    
+    &__label--nombre {
+        grid-area: nombre;
+        justify-self: end;
+    }
+    &__input--nombre {
+        grid-area: inNombre;
+    }
+    &__label--apellido {
+        grid-area: apellido;
+        justify-self: end;
+    }
+    &__input--apellido {
+        grid-area: inApellido;
+    }
+    &__label--telefono {
+        grid-area: telefono;
+        justify-self: end;
+    }
+    &__input--telefono {
+        grid-area: inTelefono;
+    }
+    &__label--mail {
+        grid-area: mail;
+        justify-self: end;
+    }
+    &__input--mail {
+        grid-area: inMail;
+    }
+    &__texto {
+        grid-area: seleccion;
+    }
+    &__clases {
+        grid-area: modo;
+    }  
+    &__cantidad {
+        grid-area: cantidad;
+    }
+    &__enviar {
+        grid-area: enviar;
+        justify-self: end;
+    }
+}
+#inscribite {
+    font-size: 28px;
+}
+#tituloClases {
+    font-size: 24px;
+}
+#textoClases {
+    font-size: 16px;
+}

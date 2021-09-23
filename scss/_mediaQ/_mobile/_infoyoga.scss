@@ -1,0 +1,78 @@
+.info {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: repeat(12, auto);  
+    grid-template-areas:    ". titInfo   titInfo   ."
+                            ". artUno    artUno    ."
+                            ". .         imgUno    ."
+                            ". imgDos    imgUno    ."
+                            ". imgDos    .         ." 
+                            ". artDos    artDos    ."
+                            ". artTres   artTres   ."
+                            ". .         imgTres   ."
+                            ". imgCuatro imgTres   ."
+                            ". imgCuatro .         ."
+                            ". artCuatro artCuatro ."
+                            ". musica    musica    ." ;
+    justify-items: center;
+    align-items: center;   
+    
+    &__titulo {
+        grid-area: titInfo;
+    }
+    &__articulo {
+        &--uno {
+            grid-area: artUno;
+        }
+        &--dos {
+            grid-area: artDos;
+            margin-bottom: 5vh;
+            border-radius: 0 20px 20px 20px;
+        }
+        &--tres {
+            grid-area: artTres;
+        }
+        &--cuatro {
+            grid-area: artCuatro;
+            border-radius: 0 20px 20px 20px;
+        }
+        &--uno , &--tres {
+            h2 {
+                text-align: left;
+            }
+            border-radius: 20px 20px 0 20px;
+        }
+    }
+    &__img {
+        border: solid 6px $colorNav;
+        width: $ochenta;
+
+        &--beneficios {
+            grid-area: imgUno;
+        }
+        &--espacio {
+            grid-area: imgDos;
+        }
+        &--musica {
+            grid-area: imgTres;
+        }
+        &--recomendaciones {
+            grid-area: imgCuatro;
+        }
+        &--beneficios , &--musica {
+            justify-self: end;
+            align-self: start;
+            border-top: 0px;
+            border-radius: 0 0 20px 20px;
+        }
+        &--espacio , &--recomendaciones {
+            justify-self: start;
+            align-self: end;
+            border-bottom: 0px;
+            border-radius: 20px 20px 0 0;
+        }
+    }
+    &__aside {
+        grid-area: musica;
+    }
+}

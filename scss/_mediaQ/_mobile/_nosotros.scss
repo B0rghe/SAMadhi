@@ -1,0 +1,20 @@
+.gridNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);  
+    grid-template-areas: "tituloNos"
+                         "textoNos"
+                         "carrusel";
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 4vh;
+}
+#subtNosotros {
+    grid-area: tituloNos;
+}
+#textoNosotros {
+    grid-area: textoNos;
+}
+.carruselNos {
+    grid-area: carrusel;
+}

@@ -1,0 +1,812 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Exo', sans-serif; }
+
+body {
+  margin-top: 80px;
+  background-color: #f5efeb; }
+  body a {
+    text-decoration: none; }
+  body nav {
+    background-color: #33272D; }
+  body .navbar-nav {
+    margin: auto 10px auto auto; }
+  body .nav-item {
+    text-align: right; }
+  body .whatsapp {
+    width: 60px;
+    position: fixed;
+    bottom: 18vh;
+    right: 10px; }
+    body .whatsapp:hover {
+      transform: scale(1.3, 1.3);
+      transition: 0.5s; }
+  body .footer {
+    color: #f5efeb;
+    margin-top: 6vh;
+    width: 100%;
+    background-color: #33272D; }
+    body .footer a {
+      width: max-content;
+      margin: 3px 25px 0 auto;
+      color: #f5efeb; }
+      body .footer a:hover {
+        color: #735966; }
+    body .footer__logo {
+      width: 22vw;
+      display: block;
+      margin: auto;
+      position: relative;
+      top: 15px; }
+    body .footer__redes {
+      display: block;
+      text-align: right;
+      margin: 0 10px 5px auto;
+      position: relative;
+      font-size: 0.7rem; }
+    body .footer__copyright {
+      display: inline-block;
+      position: relative;
+      bottom: 5px;
+      left: 5px;
+      font-size: 0.7rem; }
+  body .error {
+    margin-top: -60px;
+    color: #33272D; }
+    body .error__logo {
+      display: block;
+      margin: 15vh auto 5vh;
+      width: 30vw; }
+    body .error__subt {
+      font-size: 2rem;
+      display: block;
+      text-align: center; }
+    body .error__texto {
+      font-size: 1.5rem;
+      display: block;
+      text-align: center; }
+    body .error__link {
+      display: block;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: #33272D;
+      color: #f5efeb;
+      width: 140px;
+      margin: 20px auto;
+      padding: 3px;
+      border: solid 2px #33272D;
+      border-left-color: #735966;
+      border-top-color: #735966;
+      border-radius: 5px; }
+      body .error__link:hover {
+        background-color: #735966; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#portada {
+  width: 60%;
+  align-self: center;
+  animation-duration: 3s;
+  animation-name: aparecer; }
+
+.bienvenida {
+  width: 90%;
+  color: #735966; }
+  .bienvenida__titulo {
+    font-size: 2.3rem;
+    margin: 8vh 2vw 0; }
+  .bienvenida__texto {
+    margin: 2vh 2vw;
+    text-align: justify;
+    line-height: 4vw;
+    font-size: 1rem; }
+
+.divIndex {
+  display: inline-block;
+  color: #735966;
+  width: 80%;
+  border: solid 0.7vw #33272D;
+  border-right-color: #735966;
+  border-bottom-color: #735966;
+  border-top-left-radius: 3vw;
+  border-bottom-right-radius: 3vw; }
+  .divIndex__subt {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2vw; }
+  .divIndex__texto {
+    text-align: justify;
+    font-size: 0.9rem;
+    padding: 2vw; }
+
+.fondoIndex {
+  margin-top: 5vh;
+  color: #735966;
+  text-align: center; }
+  .fondoIndex__texto {
+    margin: auto;
+    font-size: 1.3rem; }
+  .fondoIndex__link {
+    color: #735966;
+    font-weight: 700;
+    font-size: 1.5rem;
+    max-width: max-content;
+    display: block;
+    margin: auto; }
+    .fondoIndex__link:hover {
+      color: #33272D;
+      font-weight: 700; }
+
+#tituloClases {
+  color: #735966;
+  font-size: 4vw;
+  margin: 20vh 2vw 6vh; }
+
+#textoClases {
+  color: #735966;
+  margin: 0vw 2vw 2vh;
+  font-size: 2vw; }
+
+.linkClases {
+  color: #735966;
+  font-weight: 700; }
+  .linkClases:hover {
+    color: #33272D; }
+
+#tablaHorarios {
+  width: 70vw;
+  margin: auto;
+  background-color: #535E73;
+  color: #f5efeb;
+  border: solid 20px #735966;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px; }
+  #tablaHorarios p {
+    background-color: #735966;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 700;
+    height: 8vw; }
+  #tablaHorarios table {
+    margin: auto;
+    font-size: 2.5vw;
+    border-spacing: 2vh 2vw;
+    text-align: center;
+    border-collapse: collapse; }
+
+td, th {
+  padding: 2vh 2vw;
+  border-bottom: dotted 1px #f5efeb; }
+
+.logoHorarios {
+  width: 5vw; }
+
+#inscribite {
+  color: #33272D;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  font-size: 4vw;
+  text-align: center; }
+
+#contenedorFormulario {
+  width: 70vw;
+  margin: auto;
+  background-color: #735966;
+  color: #f5efeb;
+  border: solid 20px #735966;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px; }
+
+#subtInscripcion {
+  margin-bottom: 5vh;
+  display: block;
+  text-align: center; }
+  #subtInscripcion a {
+    font-weight: 700;
+    color: #f5efeb; }
+  #subtInscripcion a:hover {
+    color: #33272D; }
+
+.inscripcion__label {
+  margin-right: 10px; }
+
+.inscripcion__input {
+  width: auto;
+  margin: 0 0 10px;
+  background-color: #f5efeb;
+  color: #735966;
+  border: auto;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-weight: 400; }
+
+.inscripcion__texto {
+  margin-bottom: 15px; }
+
+.inscripcion__clases {
+  margin-right: 13px; }
+
+.inscripcion__cantidad {
+  width: 80%;
+  margin: auto auto 15px;
+  background-color: #f5efeb;
+  color: #735966;
+  border: auto;
+  max-width: 220px;
+  border-radius: 5px;
+  font-weight: 400;
+  padding: 5px; }
+  .inscripcion__cantidad option:hover {
+    background-color: #735966;
+    color: #f5efeb; }
+
+.inscripcion__enviar {
+  width: 20vw;
+  max-width: 130px;
+  height: 6vh;
+  font-weight: 700;
+  border-radius: 5px; }
+  .inscripcion__enviar:hover {
+    background-color: #33272D;
+    color: #f5efeb; }
+
+.info__titulo {
+  color: #735966;
+  font-size: 4vw;
+  padding: 5vh 0;
+  width: 80%; }
+
+.info__articulo {
+  background-color: #33272D;
+  width: 100%;
+  color: #f5efeb; }
+  .info__articulo__subt {
+    text-align: right;
+    padding: 2vh;
+    font-size: 20px; }
+  .info__articulo__texto {
+    text-align: justify;
+    padding: 0 2vh 1vh;
+    font-size: 16px; }
+
+.info__aside {
+  background-color: #735966;
+  color: #f5efeb;
+  margin-top: 5vh;
+  padding: 3vh 0;
+  font-size: 18px;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center; }
+  .info__aside iframe {
+    height: 200px; }
+
+#subtNosotros {
+  color: #735966;
+  font-size: 30px;
+  margin: 5vh 5vw; }
+
+#textoNosotros {
+  color: #735966;
+  text-align: justify;
+  width: 90%; }
+
+.carousel {
+  max-width: 500px;
+  max-height: 294px;
+  margin: 30px;
+  padding: 4px;
+  border: 1px solid #33272D;
+  border-radius: 5px;
+  box-sizing: content-box; }
+
+.carousel-item img {
+  max-width: 500px;
+  max-height: 294px; }
+
+#tituloContacto {
+  color: #735966;
+  font-size: 4vw;
+  width: 100%;
+  padding: 3vw 0px 0px;
+  text-align: center; }
+
+#flexUnoContacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5vh 0; }
+
+#imgVertical {
+  max-width: 300px;
+  margin-bottom: 30px; }
+
+#redes {
+  color: #735966;
+  font-size: 20px;
+  min-width: 350px;
+  text-align: center;
+  display: inline-block;
+  margin: 2vh 2vw; }
+  #redes a {
+    color: #735966;
+    display: block;
+    font-weight: 400;
+    width: 140px;
+    margin: 20px auto;
+    padding: 3px;
+    border: solid 2px #33272D;
+    border-radius: 5px;
+    border-left-color: #735966;
+    border-top-color: #735966; }
+  #redes a:hover {
+    background-color: #33272D;
+    color: #f5efeb; }
+
+.contacto {
+  width: auto;
+  margin: 2vh 2vw;
+  background-color: #735966;
+  color: #f5efeb;
+  border: solid 10px #735966;
+  min-width: 350px;
+  display: inline-block;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px; }
+  .contacto__texto {
+    text-align: center;
+    font-size: 2.5vw; }
+  .contacto__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2vh 1vw;
+    font-size: 16px; }
+    .contacto__form__div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1vh 0; }
+      .contacto__form__div__input {
+        font-weight: 400;
+        width: 70%;
+        border-radius: 5px;
+        padding-left: 5px; }
+      .contacto__form__div__enviar {
+        width: 9vw;
+        min-width: 80px;
+        height: 6.5vh;
+        margin: auto;
+        border-radius: 5px;
+        font-weight: 700; }
+        .contacto__form__div__enviar:hover {
+          background-color: #33272D;
+          color: #f5efeb; }
+
+#contactoUbicacion {
+  background-color: #33272D;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+#datosContacto {
+  color: #f5efeb;
+  display: inline-block;
+  min-width: 250px;
+  height: auto;
+  margin-left: 4vw; }
+
+.mapa {
+  height: 300px;
+  display: inline-block;
+  padding: 2vh 1vw; }
+
+@media only screen and (max-width: 600px) {
+  .navNotebook {
+    display: none; }
+  .mainIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "portada"  "bienvenida"  "textoUno"  "textoDos"  "textoTres"  "fondoIndex";
+    grid-row-gap: 1vh;
+    justify-items: center;
+    align-items: center; }
+  .inscripcion {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "nombre    inNombre" "apellido  inApellido" "telefono  inTelefono" "mail      inMail" "seleccion seleccion" "modo      modo" "cantidad  cantidad" ".         enviar";
+    justify-items: center;
+    align-items: center; }
+    .inscripcion__label--nombre {
+      grid-area: nombre;
+      justify-self: end; }
+    .inscripcion__input--nombre {
+      grid-area: inNombre; }
+    .inscripcion__label--apellido {
+      grid-area: apellido;
+      justify-self: end; }
+    .inscripcion__input--apellido {
+      grid-area: inApellido; }
+    .inscripcion__label--telefono {
+      grid-area: telefono;
+      justify-self: end; }
+    .inscripcion__input--telefono {
+      grid-area: inTelefono; }
+    .inscripcion__label--mail {
+      grid-area: mail;
+      justify-self: end; }
+    .inscripcion__input--mail {
+      grid-area: inMail; }
+    .inscripcion__texto {
+      grid-area: seleccion; }
+    .inscripcion__clases {
+      grid-area: modo; }
+    .inscripcion__cantidad {
+      grid-area: cantidad; }
+    .inscripcion__enviar {
+      grid-area: enviar;
+      justify-self: end; }
+  #inscribite {
+    font-size: 28px; }
+  #tituloClases {
+    font-size: 24px; }
+  #textoClases {
+    font-size: 16px; }
+  .info {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas: ". titInfo   titInfo   ." ". artUno    artUno    ." ". .         imgUno    ." ". imgDos    imgUno    ." ". imgDos    .         ."  ". artDos    artDos    ." ". artTres   artTres   ." ". .         imgTres   ." ". imgCuatro imgTres   ." ". imgCuatro .         ." ". artCuatro artCuatro ." ". musica    musica    .";
+    justify-items: center;
+    align-items: center; }
+    .info__titulo {
+      grid-area: titInfo; }
+    .info__articulo--uno {
+      grid-area: artUno; }
+    .info__articulo--dos {
+      grid-area: artDos;
+      margin-bottom: 5vh;
+      border-radius: 0 20px 20px 20px; }
+    .info__articulo--tres {
+      grid-area: artTres; }
+    .info__articulo--cuatro {
+      grid-area: artCuatro;
+      border-radius: 0 20px 20px 20px; }
+    .info__articulo--uno, .info__articulo--tres {
+      border-radius: 20px 20px 0 20px; }
+      .info__articulo--uno h2, .info__articulo--tres h2 {
+        text-align: left; }
+    .info__img {
+      border: solid 6px #33272D;
+      width: 80%; }
+      .info__img--beneficios {
+        grid-area: imgUno; }
+      .info__img--espacio {
+        grid-area: imgDos; }
+      .info__img--musica {
+        grid-area: imgTres; }
+      .info__img--recomendaciones {
+        grid-area: imgCuatro; }
+      .info__img--beneficios, .info__img--musica {
+        justify-self: end;
+        align-self: start;
+        border-top: 0px;
+        border-radius: 0 0 20px 20px; }
+      .info__img--espacio, .info__img--recomendaciones {
+        justify-self: start;
+        align-self: end;
+        border-bottom: 0px;
+        border-radius: 20px 20px 0 0; }
+    .info__aside {
+      grid-area: musica; }
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "tituloNos" "textoNos" "carrusel";
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 4vh; }
+  #subtNosotros {
+    grid-area: tituloNos; }
+  #textoNosotros {
+    grid-area: textoNos; }
+  .carruselNos {
+    grid-area: carrusel; } }
+
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  .navNotebook {
+    display: none; }
+  .whatsapp {
+    width: 75px; }
+  .mainIndex {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "portada    portada    portada    portada" "bienvenida bienvenida bienvenida bienvenida"  "textoUno   textoUno   textoTres  textoTres" "textoDos   textoDos   textoDos   textoDos" "fondoIndex fondoIndex fondoIndex fondoIndex";
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center; }
+  #portada {
+    grid-area: portada; }
+  .bienvenida {
+    margin-top: -50px;
+    grid-area: bienvenida; }
+  .divIndex--uno {
+    grid-area: textoUno; }
+  .divIndex--dos {
+    grid-area: textoDos;
+    width: 90%; }
+  .divIndex--tres {
+    grid-area: textoTres;
+    align-self: stretch; }
+  .fondoIndex {
+    grid-area: fondoIndex;
+    margin-top: 0; }
+  .inscripcion {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "nombre     nombre     apellido   apellido" "inNombre   inNombre   inApellido inApellido" "telefono   telefono   mail       mail" "inTelefono inTelefono inMail     inMail" "seleccion  seleccion  seleccion  seleccion" "modo       modo       modo       modo" "cantidad   cantidad   cantidad   cantidad" "enviar     enviar     enviar     enviar";
+    justify-items: center;
+    align-items: center; }
+    .inscripcion__label--nombre {
+      grid-area: nombre; }
+    .inscripcion__input--nombre {
+      grid-area: inNombre;
+      width: 80%; }
+    .inscripcion__label--apellido {
+      grid-area: apellido; }
+    .inscripcion__input--apellido {
+      grid-area: inApellido;
+      width: 80%; }
+    .inscripcion__label--telefono {
+      grid-area: telefono; }
+    .inscripcion__input--telefono {
+      grid-area: inTelefono;
+      width: 80%; }
+    .inscripcion__label--mail {
+      grid-area: mail; }
+    .inscripcion__input--mail {
+      grid-area: inMail;
+      width: 80%; }
+    .inscripcion__texto {
+      grid-area: seleccion; }
+    .inscripcion__clases {
+      grid-area: modo; }
+    .inscripcion__cantidad {
+      grid-area: cantidad; }
+    .inscripcion__enviar {
+      grid-area: enviar;
+      margin-top: 20px;
+      justify-self: right; }
+  .info {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "titInfo   titInfo   titInfo" "artUno    artUno    imgUno" "imgDos    artDos    artDos" "artTres   artTres   imgTres" "imgCuatro artCuatro artCuatro" "musica    musica    musica";
+    grid-row-gap: 5vh;
+    justify-items: center;
+    align-items: center; }
+    .info__titulo {
+      grid-area: titInfo; }
+    .info__articulo {
+      width: 90%; }
+      .info__articulo--uno {
+        grid-area: artUno; }
+      .info__articulo--dos {
+        grid-area: artDos; }
+      .info__articulo--tres {
+        grid-area: artTres; }
+      .info__articulo--cuatro {
+        grid-area: artCuatro; }
+      .info__articulo--uno, .info__articulo--tres {
+        border-radius: 20px 0 0 20px;
+        justify-self: end; }
+      .info__articulo--dos, .info__articulo--cuatro {
+        border-radius: 0 20px 20px 0;
+        justify-self: start; }
+      .info__articulo__subt {
+        text-align: center; }
+    .info__img {
+      width: 90%; }
+      .info__img--beneficios {
+        grid-area: imgUno;
+        justify-self: start; }
+      .info__img--espacio {
+        grid-area: imgDos;
+        justify-self: end; }
+      .info__img--musica {
+        grid-area: imgTres;
+        justify-self: start; }
+      .info__img--recomendaciones {
+        grid-area: imgCuatro;
+        justify-self: end; }
+    .info__aside {
+      grid-area: musica;
+      width: 60%; }
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 294px;
+    grid-template-areas: "tituloNos" "textoNos" "carrusel";
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 4vh; }
+  #subtNosotros {
+    grid-area: tituloNos; }
+  #textoNosotros {
+    grid-area: textoNos; }
+  .carruselNos {
+    grid-area: carrusel; } }
+
+@media only screen and (min-width: 992px) {
+  .nav-item {
+    text-align: left; }
+  .navResponsive {
+    display: none; }
+  .whatsapp {
+    width: 90px; }
+  .offcanvas {
+    background-color: #33272D;
+    color: #f5efeb; }
+  .mainIndex {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "portada    portada    portada    portada" "bienvenida bienvenida bienvenida bienvenida"  "textoUno   textoUno   .          ." "textoUno   textoUno   textoDos   textoDos" ".          .          textoDos   textoDos" "textoTres  textoTres  textoDos   textoDos" "textoTres  textoTres  .          ." "fondoIndex fondoIndex fondoIndex fondoIndex";
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center; }
+  #portada {
+    grid-area: portada; }
+  .bienvenida {
+    grid-area: bienvenida; }
+    .bienvenida__titulo {
+      font-size: 5vw; }
+    .bienvenida__texto {
+      font-size: 2vw;
+      line-height: 4vw; }
+  .divIndex__subt {
+    font-size: 2vw; }
+  .divIndex__texto {
+    font-size: 1.5vw; }
+  .divIndex--uno {
+    grid-area: textoUno;
+    width: 70%; }
+  .divIndex--dos {
+    grid-area: textoDos;
+    width: 70%; }
+  .divIndex--tres {
+    grid-area: textoTres;
+    align-self: stretch;
+    width: 70%; }
+  .fondoIndex {
+    grid-area: fondoIndex; }
+    .fondoIndex__texto {
+      font-size: 2rem; }
+    .fondoIndex__link {
+      font-size: 2rem; }
+  .inscripcion {
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nombre     inNombre   apellido   inApellido" "telefono   inTelefono mail       inMail" "seleccion  seleccion  seleccion  seleccion" "modo       modo       modo       cantidad" "enviar     enviar     enviar     enviar";
+    justify-items: center;
+    align-items: center; }
+    .inscripcion__label--nombre {
+      grid-area: nombre;
+      justify-self: end; }
+    .inscripcion__input--nombre {
+      grid-area: inNombre;
+      width: 90%;
+      max-width: 280px; }
+    .inscripcion__label--apellido {
+      grid-area: apellido;
+      justify-self: end; }
+    .inscripcion__input--apellido {
+      grid-area: inApellido;
+      width: 90%;
+      max-width: 280px; }
+    .inscripcion__label--telefono {
+      grid-area: telefono;
+      justify-self: end; }
+    .inscripcion__input--telefono {
+      grid-area: inTelefono;
+      width: 90%;
+      max-width: 280px; }
+    .inscripcion__label--mail {
+      grid-area: mail;
+      justify-self: end; }
+    .inscripcion__input--mail {
+      grid-area: inMail;
+      width: 90%;
+      max-width: 280px; }
+    .inscripcion__texto {
+      grid-area: seleccion; }
+    .inscripcion__clases {
+      grid-area: modo;
+      justify-self: end; }
+    .inscripcion__cantidad {
+      grid-area: cantidad; }
+    .inscripcion__enviar {
+      grid-area: enviar; }
+  .info {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "titInfo   titInfo   titInfo" "artUno    imgUno    musica" "imgDos    artDos    musica" "artTres   imgTres   musica" "imgCuatro artCuatro .";
+    grid-row-gap: 5vh;
+    justify-items: center;
+    align-items: center; }
+    .info__titulo {
+      grid-area: titInfo; }
+    .info__articulo {
+      width: 80%; }
+      .info__articulo--uno {
+        grid-area: artUno; }
+      .info__articulo--dos {
+        grid-area: artDos; }
+      .info__articulo--tres {
+        grid-area: artTres; }
+      .info__articulo--cuatro {
+        grid-area: artCuatro; }
+      .info__articulo--uno, .info__articulo--tres {
+        border-radius: 20px 0 0 20px;
+        justify-self: end; }
+      .info__articulo--dos, .info__articulo--cuatro {
+        border-radius: 0 20px 20px 0;
+        justify-self: start; }
+      .info__articulo__subt {
+        text-align: center; }
+    .info__img {
+      width: 80%;
+      max-width: 350px; }
+      .info__img--beneficios {
+        grid-area: imgUno;
+        justify-self: start; }
+      .info__img--espacio {
+        grid-area: imgDos;
+        justify-self: end; }
+      .info__img--musica {
+        grid-area: imgTres;
+        justify-self: start; }
+      .info__img--recomendaciones {
+        grid-area: imgCuatro;
+        justify-self: end; }
+    .info__aside {
+      grid-area: musica;
+      align-self: start;
+      width: 90%; }
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "tituloNos tituloNos" "carrusel  textoNos" "carrusel  textoNos";
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 5vh; }
+  #subtNosotros {
+    grid-area: tituloNos;
+    font-size: 35px; }
+  #textoNosotros {
+    grid-area: textoNos;
+    font-size: 20px; }
+  .carruselNos {
+    grid-area: carrusel; }
+  .carousel {
+    margin-right: 0; } }

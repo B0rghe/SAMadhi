@@ -1,0 +1,105 @@
+#tituloClases {
+    color: $colorText;
+    font-size: 4vw;
+    margin: 20vh 2vw 6vh;
+}
+#textoClases {
+    color: $colorText;
+    margin: 0vw 2vw 2vh;
+    font-size: 2vw;
+}
+.linkClases {
+    color: $colorText;
+    font-weight: 700;
+    &:hover {
+        color: $colorNav;
+    }
+}
+#tablaHorarios {
+    @include caja (70vw, auto, #535E73, $colorBack, (solid 20px $colorText));
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    p {
+        background-color: $colorText;
+        text-align: center;
+        font-size: 4vw;
+        font-weight: 700;
+        height: 8vw;
+    }
+    table {
+        margin: auto;
+        font-size: 2.5vw;
+        border-spacing: 2vh 2vw;
+        text-align: center;
+        border-collapse: collapse;
+    }
+}
+td, th {
+    padding: 2vh 2vw;
+    border-bottom: dotted 1px $colorBack;
+}
+.logoHorarios {
+    width: 5vw;
+}
+#inscribite {
+    color: $colorNav;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 4vw;
+    text-align: center;
+}
+#contenedorFormulario {
+    @include caja (70vw, auto, $colorText, $colorBack, (solid 20px $colorText));
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+#subtInscripcion{
+    margin-bottom: 5vh;
+    display: block;
+    text-align: center;
+    a {
+        font-weight: 700;
+        color: $colorBack;
+    }
+    a:hover {
+        color: $colorNav;}
+}
+.inscripcion {
+    &__label {
+        margin-right: 10px;
+    }
+    &__input {
+        @include caja (auto, (0 0 10px),$colorBack, $colorText, auto);
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-weight: 400;
+    }
+    &__texto {
+        margin-bottom: 15px;
+    }
+    &__clases {
+        margin-right: 13px;
+    }
+    &__cantidad {
+        @include caja ($ochenta, (auto auto 15px), $colorBack, $colorText, auto);
+        max-width: 220px;
+        border-radius: 5px;
+        font-weight: 400;
+        padding: 5px;
+        option:hover {
+            background-color: $colorText;
+            color: $colorBack;
+        }
+    }
+    &__enviar {
+        width: 20vw;
+        max-width: 130px;
+        height: 6vh;
+        font-weight: 700;
+        border-radius: 5px;
+        &:hover {
+            background-color: $colorNav;
+            color: $colorBack;
+        }
+    }
+}

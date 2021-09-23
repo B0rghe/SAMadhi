@@ -1,0 +1,23 @@
+#subtNosotros {
+    color: $colorText;
+    font-size: 30px;
+    margin: 5vh 5vw;
+}
+#textoNosotros {
+    color: $colorText;
+    text-align: justify;
+    width: 90%;
+}
+.carousel {
+    max-width: 500px;
+    max-height: 294px;
+    margin: 30px;
+    padding: 4px;
+    border: 1px solid $colorNav;
+    border-radius: 5px;
+    box-sizing: content-box;
+}
+.carousel-item img {
+      max-width: 500px;
+      max-height: 294px;
+}

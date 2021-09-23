@@ -1,0 +1,59 @@
+.inscripcion {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: "nombre     nombre     apellido   apellido"
+                         "inNombre   inNombre   inApellido inApellido"
+                         "telefono   telefono   mail       mail"
+                         "inTelefono inTelefono inMail     inMail"
+                         "seleccion  seleccion  seleccion  seleccion"
+                         "modo       modo       modo       modo"
+                         "cantidad   cantidad   cantidad   cantidad"
+                         "enviar     enviar     enviar     enviar";
+    justify-items: center;
+    align-items: center;    
+
+                   
+    &__label--nombre {
+        grid-area: nombre;
+    }
+    &__input--nombre {
+        grid-area: inNombre;
+        width: $ochenta;
+    }
+    &__label--apellido {
+        grid-area: apellido;
+    }
+    &__input--apellido {
+        grid-area: inApellido;
+        width: $ochenta;
+    }
+    &__label--telefono {
+        grid-area: telefono;
+    }
+    &__input--telefono {
+        grid-area: inTelefono;
+        width: $ochenta;
+    }
+    &__label--mail {
+        grid-area: mail;
+    }
+    &__input--mail {
+        grid-area: inMail;
+        width: $ochenta;
+    }
+    &__texto {
+        grid-area: seleccion;
+    }
+    &__clases {
+        grid-area: modo;
+    }  
+    &__cantidad {
+        grid-area: cantidad;
+    }
+    &__enviar {
+        grid-area: enviar;
+        margin-top: 20px;
+        justify-self: right;
+    }
+}

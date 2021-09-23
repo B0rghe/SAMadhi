@@ -1,0 +1,68 @@
+.info {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: repeat(5, auto);  
+    grid-template-areas:    "titInfo   titInfo   titInfo"
+                            "artUno    imgUno    musica"
+                            "imgDos    artDos    musica"
+                            "artTres   imgTres   musica"
+                            "imgCuatro artCuatro .";
+    grid-row-gap: 5vh;
+    justify-items: center;
+    align-items: center;   
+    
+    &__titulo {
+        grid-area: titInfo;
+    }
+    &__articulo {
+        width: $ochenta;
+        &--uno {
+            grid-area: artUno;
+        }
+        &--dos {
+            grid-area: artDos;
+        }
+        &--tres {
+            grid-area: artTres;
+        }
+        &--cuatro {
+            grid-area: artCuatro;
+        }
+        &--uno , &--tres {
+            border-radius: 20px 0 0 20px;
+            justify-self: end;
+        }
+        &--dos , &--cuatro {
+            border-radius: 0 20px 20px 0;
+            justify-self: start;
+        }
+        &__subt {
+            text-align: center;
+        }
+    }
+    &__img {
+        width: $ochenta;
+        max-width: 350px;
+        &--beneficios {
+            grid-area: imgUno;
+            justify-self: start;
+        }
+        &--espacio {
+            grid-area: imgDos;
+            justify-self: end;
+        }
+        &--musica {
+            grid-area: imgTres;
+            justify-self: start;
+        }
+        &--recomendaciones {
+            grid-area: imgCuatro;
+            justify-self: end;
+        }
+    }
+    &__aside {
+        grid-area: musica;
+        align-self: start;
+        width: $noventa;
+    }  
+}

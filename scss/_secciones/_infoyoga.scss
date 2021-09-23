@@ -1,0 +1,36 @@
+.info {
+    &__titulo {
+        color: $colorText;
+        font-size: 4vw;
+        padding: 5vh 0;
+        width: $ochenta;
+    }
+    &__articulo {
+        background-color: $colorNav;
+        width: 100%;
+        color: $colorBack;
+        &__subt {
+            text-align: right;
+            padding: 2vh;
+            font-size: 20px;
+        }
+        &__texto {
+            text-align: justify;
+            padding: 0 2vh 1vh;
+            font-size: 16px;
+        }
+    }
+    &__aside {
+        background-color: $colorText;
+        color: $colorBack;
+        margin-top: 5vh;
+        padding: 3vh 0;
+        font-size: 18px;
+        width: $ochenta;
+        border-radius: 10px;
+        text-align: center;
+        iframe {
+            height: 200px;
+        }
+    }
+}

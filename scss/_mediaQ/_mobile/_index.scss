@@ -1,0 +1,14 @@
+.mainIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:    "portada" 
+                            "bienvenida" 
+                            "textoUno" 
+                            "textoDos" 
+                            "textoTres" 
+                            "fondoIndex" ;
+    grid-row-gap: 1vh;
+    justify-items: center;
+    align-items: center;
+}

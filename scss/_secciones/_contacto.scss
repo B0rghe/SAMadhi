@@ -1,0 +1,107 @@
+#tituloContacto {
+    color: $colorText;
+    font-size: 4vw;
+    width: 100%;
+    padding: 3vw 0px 0px;
+    text-align: center;
+}
+#flexUnoContacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vh 0;
+}
+#imgVertical {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+#redes {
+    color: $colorText;
+    font-size: 20px;
+    min-width: 350px;
+    text-align: center;
+    display: inline-block;
+    margin: 2vh 2vw;
+    a {
+        color: $colorText;
+        display: block;
+        font-weight: 400;
+        width: 140px;
+        margin: 20px auto;
+        padding: 3px;
+        border: solid 2px $colorNav;
+        border-radius: 5px;
+        border-left-color: $colorText;
+        border-top-color: $colorText;
+    }
+    a:hover {
+        background-color: $colorNav;
+        color: $colorBack;
+    }
+}
+.contacto {
+    @include caja (auto, (2vh 2vw), $colorText, $colorBack, (solid 10px $colorText));
+    min-width: 350px;
+    display: inline-block;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    &__texto {
+        text-align: center;
+        font-size: 2.5vw;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2vh 1vw;
+        font-size: 16px;
+        &__div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1vh 0;
+            &__input {
+                font-weight: 400;
+                width: 70%;
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+            &__enviar {
+                width: 9vw;
+                min-width: 80px;
+                height: 6.5vh;
+                margin: auto;
+                border-radius: 5px;
+                font-weight: 700;
+                &:hover {
+                    background-color: $colorNav;
+                    color: $colorBack;
+                }
+            }
+        }
+    }
+}
+#contactoUbicacion {
+    background-color: $colorNav;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#datosContacto {
+    color: $colorBack;
+    display: inline-block;
+    min-width: 250px;
+    height: auto;
+    margin-left: 4vw;
+}
+.mapa {
+    height: 300px;
+    display: inline-block;
+    padding: 2vh 1vw;
+}

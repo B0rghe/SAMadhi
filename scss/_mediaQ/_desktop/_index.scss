@@ -1,0 +1,60 @@
+.mainIndex {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:    "portada    portada    portada    portada"
+                            "bienvenida bienvenida bienvenida bienvenida" 
+                            "textoUno   textoUno   .          ."
+                            "textoUno   textoUno   textoDos   textoDos"
+                            ".          .          textoDos   textoDos"
+                            "textoTres  textoTres  textoDos   textoDos"
+                            "textoTres  textoTres  .          ."
+                            "fondoIndex fondoIndex fondoIndex fondoIndex";
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center;    
+}
+#portada {
+    grid-area: portada;
+}
+.bienvenida {
+    grid-area: bienvenida;
+    &__titulo {
+        font-size: 5vw;
+    }
+    &__texto {
+        font-size: 2vw;
+        line-height:4vw;
+    }
+}  
+.divIndex {
+    &__subt {
+        font-size: 2vw;
+    }
+    &__texto {
+        font-size: 1.5vw;
+    }
+    &--uno {
+        grid-area: textoUno;
+        width: 70%;
+    }  
+    &--dos {
+        grid-area: textoDos;
+        width: 70%;
+    }  
+    &--tres {
+        grid-area: textoTres;
+        align-self: stretch;
+        width: 70%;
+    } 
+}
+.fondoIndex {
+    grid-area: fondoIndex;
+    &__texto {
+        font-size: 2rem;
+    }
+    &__link {
+        font-size: 2rem;
+    }
+    
+}
