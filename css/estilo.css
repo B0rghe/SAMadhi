@@ -490,27 +490,32 @@ td, th {
       border-radius: 20px 20px 0 20px; }
       .info__articulo--uno h2, .info__articulo--tres h2 {
         text-align: left; }
-    .info__img {
-      border: solid 6px #33272D;
-      width: 80%; }
-      .info__img--beneficios {
-        grid-area: imgUno; }
-      .info__img--espacio {
-        grid-area: imgDos; }
-      .info__img--musica {
-        grid-area: imgTres; }
-      .info__img--recomendaciones {
-        grid-area: imgCuatro; }
-      .info__img--beneficios, .info__img--musica {
+    .info__div {
+      width: 90%;
+      background-color: #33272D;
+      border: solid 6px #33272D; }
+      .info__div--uno, .info__div--tres {
+        grid-area: imgUno;
         justify-self: end;
         align-self: start;
-        border-top: 0px;
-        border-radius: 0 0 20px 20px; }
-      .info__img--espacio, .info__img--recomendaciones {
+        border-radius: 0 0 20px 20px;
+        border-top: 0px; }
+      .info__div--dos, .info__div--cuatro {
+        grid-area: imgDos;
         justify-self: start;
         align-self: end;
-        border-bottom: 0px;
-        border-radius: 20px 20px 0 0; }
+        border-radius: 20px 20px 0 0;
+        border-bottom: 0px; }
+      .info__div--tres {
+        grid-area: imgTres; }
+      .info__div--cuatro {
+        grid-area: imgCuatro; }
+      .info__div__img {
+        width: 100%; }
+        .info__div__img--beneficios, .info__div__img--musica {
+          border-radius: 0 0 15px 15px; }
+        .info__div__img--espacio, .info__div__img--recomendaciones {
+          border-radius: 15px 15px 0 0; }
     .info__aside {
       grid-area: musica; }
   .gridNosotros {
@@ -622,20 +627,44 @@ td, th {
         justify-self: start; }
       .info__articulo__subt {
         text-align: center; }
-    .info__img {
-      width: 90%; }
-      .info__img--beneficios {
+    .info__div {
+      width: 90%;
+      background-color: #33272D;
+      border: solid 6px #33272D;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .info__div--uno, .info__div--tres {
         grid-area: imgUno;
-        justify-self: start; }
-      .info__img--espacio {
+        justify-self: start;
+        align-self: stretch;
+        border-radius: 0 20px 20px 0;
+        border-left: 0; }
+      .info__div--dos, .info__div--cuatro {
         grid-area: imgDos;
-        justify-self: end; }
-      .info__img--musica {
+        justify-self: end;
+        align-self: stretch;
+        border-radius: 20px 0 0 20px;
+        border-right: 0; }
+      .info__div--tres {
         grid-area: imgTres;
-        justify-self: start; }
-      .info__img--recomendaciones {
+        justify-self: start;
+        align-self: stretch;
+        border-radius: 0 20px 20px 0;
+        border-left: 0; }
+      .info__div--cuatro {
         grid-area: imgCuatro;
-        justify-self: end; }
+        justify-self: end;
+        align-self: stretch;
+        border-radius: 20px 0 0 20px;
+        border-right: 0; }
+      .info__div__img {
+        width: 100%;
+        border-radius: 15px; }
+        .info__div__img--beneficios, .info__div__img--musica {
+          border-radius: 15px; }
+        .info__div__img--espacio, .info__div__img--recomendaciones {
+          border-radius: 15px; }
     .info__aside {
       grid-area: musica;
       width: 60%; }
@@ -756,7 +785,8 @@ td, th {
     .info__titulo {
       grid-area: titInfo; }
     .info__articulo {
-      width: 80%; }
+      width: 80%;
+      align-self: stretch; }
       .info__articulo--uno {
         grid-area: artUno; }
       .info__articulo--dos {
@@ -773,21 +803,44 @@ td, th {
         justify-self: start; }
       .info__articulo__subt {
         text-align: center; }
-    .info__img {
-      width: 80%;
-      max-width: 350px; }
-      .info__img--beneficios {
+    .info__div {
+      width: 90%;
+      background-color: #33272D;
+      border: solid 6px #33272D;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .info__div--uno, .info__div--tres {
         grid-area: imgUno;
-        justify-self: start; }
-      .info__img--espacio {
+        justify-self: start;
+        align-self: stretch;
+        border-radius: 0 20px 20px 0;
+        border-left: 0; }
+      .info__div--dos, .info__div--cuatro {
         grid-area: imgDos;
-        justify-self: end; }
-      .info__img--musica {
+        justify-self: end;
+        align-self: stretch;
+        border-radius: 20px 0 0 20px;
+        border-right: 0; }
+      .info__div--tres {
         grid-area: imgTres;
-        justify-self: start; }
-      .info__img--recomendaciones {
+        justify-self: start;
+        align-self: stretch;
+        border-radius: 0 20px 20px 0;
+        border-left: 0; }
+      .info__div--cuatro {
         grid-area: imgCuatro;
-        justify-self: end; }
+        justify-self: end;
+        align-self: stretch;
+        border-radius: 20px 0 0 20px;
+        border-right: 0; }
+      .info__div__img {
+        width: 100%;
+        border-radius: 15px; }
+        .info__div__img--beneficios, .info__div__img--musica {
+          border-radius: 15px; }
+        .info__div__img--espacio, .info__div__img--recomendaciones {
+          border-radius: 15px; }
     .info__aside {
       grid-area: musica;
       align-self: start;

@@ -16,6 +16,7 @@
     }
     &__articulo {
         width: $ochenta;
+        align-self: stretch;
         &--uno {
             grid-area: artUno;
         }
@@ -40,24 +41,50 @@
             text-align: center;
         }
     }
-    &__img {
-        width: $ochenta;
-        max-width: 350px;
-        &--beneficios {
+    &__div {
+        width: $noventa;
+        background-color: $colorNav;
+        border: solid 6px $colorNav;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--uno {
             grid-area: imgUno;
             justify-self: start;
+            align-self: stretch;
+            border-radius: 0 20px 20px 0;
+            border-left: 0;
         }
-        &--espacio {
+        &--dos {
             grid-area: imgDos;
             justify-self: end;
+            align-self: stretch;
+            border-radius: 20px 0 0 20px;
+            border-right: 0;
         }
-        &--musica {
+        &--tres {
             grid-area: imgTres;
             justify-self: start;
+            align-self: stretch;
+            border-radius: 0 20px 20px 0;
+            border-left: 0;
         }
-        &--recomendaciones {
+        &--cuatro {
             grid-area: imgCuatro;
             justify-self: end;
+            align-self: stretch;
+            border-radius: 20px 0 0 20px;
+            border-right: 0;
+        }
+        &__img {
+            width: 100%;
+            border-radius: 15px;
+            &--beneficios , &--musica {
+                border-radius: 15px;
+            }
+            &--espacio , &--recomendaciones {
+                border-radius: 15px;
+            }
         }
     }
     &__aside {
