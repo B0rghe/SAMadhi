@@ -9,7 +9,7 @@
                          "enviar     enviar     enviar     enviar";
     justify-items: center;
     align-items: center;    
-
+    
     &__label--nombre {
         grid-area: nombre;
         justify-self: end;
@@ -59,4 +59,7 @@
     &__enviar {
         grid-area: enviar;
     }
+}
+#contenedorFormulario, #tablaHorarios {
+    width: 70vw;
 }

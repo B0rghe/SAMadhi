@@ -16,7 +16,7 @@
     }
 }
 #tablaHorarios {
-    @include caja (70vw, auto, #535E73, $colorBack, (solid 20px $colorText));
+    @include caja (90vw, auto, #535E73, $colorBack, (solid 20px $colorText));
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     p {
@@ -49,7 +49,7 @@ td, th {
     text-align: center;
 }
 #contenedorFormulario {
-    @include caja (70vw, auto, $colorText, $colorBack, (solid 20px $colorText));
+    @include caja (90vw, auto, $colorText, $colorBack, (solid 20px $colorText));
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }

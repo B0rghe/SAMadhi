@@ -1,6 +1,6 @@
 .inscripcion {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 25% 75%;
     grid-template-rows: repeat(8, auto);
     grid-template-areas: "nombre    inNombre"
                          "apellido  inApellido"
@@ -9,10 +9,9 @@
                          "seleccion seleccion"
                          "modo      modo"
                          "cantidad  cantidad"
-                         ".         enviar";
+                         "enviar    enviar";
     justify-items: center;
     align-items: center;     
-
     
     &__label--nombre {
         grid-area: nombre;
@@ -53,7 +52,7 @@
     }
     &__enviar {
         grid-area: enviar;
-        justify-self: end;
+        justify-self: center;
     }
 }
 #inscribite {

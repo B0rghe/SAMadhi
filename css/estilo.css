@@ -160,7 +160,7 @@ body {
     color: #33272D; }
 
 #tablaHorarios {
-  width: 70vw;
+  width: 90vw;
   margin: auto;
   background-color: #535E73;
   color: #f5efeb;
@@ -195,7 +195,7 @@ td, th {
   text-align: center; }
 
 #contenedorFormulario {
-  width: 70vw;
+  width: 90vw;
   margin: auto;
   background-color: #735966;
   color: #f5efeb;
@@ -426,9 +426,9 @@ td, th {
     align-items: center; }
   .inscripcion {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 25% 75%;
     grid-template-rows: repeat(8, auto);
-    grid-template-areas: "nombre    inNombre" "apellido  inApellido" "telefono  inTelefono" "mail      inMail" "seleccion seleccion" "modo      modo" "cantidad  cantidad" ".         enviar";
+    grid-template-areas: "nombre    inNombre" "apellido  inApellido" "telefono  inTelefono" "mail      inMail" "seleccion seleccion" "modo      modo" "cantidad  cantidad" "enviar    enviar";
     justify-items: center;
     align-items: center; }
     .inscripcion__label--nombre {
@@ -459,7 +459,7 @@ td, th {
       grid-area: cantidad; }
     .inscripcion__enviar {
       grid-area: enviar;
-      justify-self: end; }
+      justify-self: center; }
   #inscribite {
     font-size: 28px; }
   #tituloClases {
@@ -599,6 +599,8 @@ td, th {
       grid-area: enviar;
       margin-top: 20px;
       justify-self: right; }
+  #contenedorFormulario, #tablaHorarios {
+    width: 80vw; }
   .info {
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -774,6 +776,8 @@ td, th {
       grid-area: cantidad; }
     .inscripcion__enviar {
       grid-area: enviar; }
+  #contenedorFormulario, #tablaHorarios {
+    width: 70vw; }
   .info {
     display: grid;
     grid-template-columns: 35% 35% 30%;
