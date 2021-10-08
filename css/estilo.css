@@ -258,9 +258,9 @@ td, th {
 
 .info__titulo {
   color: #735966;
-  font-size: 4vw;
+  font-size: 6vw;
   padding: 5vh 0;
-  width: 80%; }
+  width: 90%; }
 
 .info__articulo {
   background-color: #33272D;
@@ -787,7 +787,8 @@ td, th {
     justify-items: center;
     align-items: center; }
     .info__titulo {
-      grid-area: titInfo; }
+      grid-area: titInfo;
+      font-size: 4vw; }
     .info__articulo {
       width: 80%;
       align-self: stretch; }
