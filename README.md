@@ -8,3 +8,5 @@ Se subio el sitio
 05/10/21 - Se arreglan errores de la seccion clases en version mobile
 
 08/10/21 - Se corrige error en el link a inicio (decía index) del nav responsive, y se acomoda tamaño del título de la sección Info Yoga.
+
+13/10/21 - Se corrigen faltas de ortografía y se acomoda el mapa de la sección contacto en la versión mobile.
