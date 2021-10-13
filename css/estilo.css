@@ -27,12 +27,6 @@ body {
     margin-top: 6vh;
     width: 100%;
     background-color: #33272D; }
-    body .footer a {
-      width: max-content;
-      margin: 3px 25px 0 auto;
-      color: #f5efeb; }
-      body .footer a:hover {
-        color: #735966; }
     body .footer__logo {
       width: 22vw;
       display: block;
@@ -45,6 +39,12 @@ body {
       margin: 0 10px 5px auto;
       position: relative;
       font-size: 0.7rem; }
+    body .footer a {
+      width: max-content;
+      margin: 3px 25px 0 auto;
+      color: #f5efeb; }
+      body .footer a:hover {
+        color: #735966; }
     body .footer__copyright {
       display: inline-block;
       position: relative;
@@ -531,7 +531,9 @@ td, th {
   #textoNosotros {
     grid-area: textoNos; }
   .carruselNos {
-    grid-area: carrusel; } }
+    grid-area: carrusel; }
+  .mapa {
+    width: 90%; } }
 
 @media only screen and (min-width: 600px) and (max-width: 991px) {
   .navNotebook {

@@ -34,14 +34,6 @@ body {
         margin-top: 6vh;
         width: 100%;
         background-color: $colorNav;
-        a {
-            width: max-content;
-            margin: 3px 25px 0 auto;
-            color: $colorBack;
-            &:hover {
-                color: $colorText;
-            }
-        }
         &__logo {
             width: 22vw;
             display: block;
@@ -55,6 +47,14 @@ body {
             margin: 0 10px 5px auto;
             position: relative;
             font-size: 0.7rem;
+        }
+        a {
+            width: max-content;
+            margin: 3px 25px 0 auto;
+            color: $colorBack;
+            &:hover {
+                color: $colorText;
+            }
         }
         &__copyright {
             display: inline-block;

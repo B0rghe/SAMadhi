@@ -6,6 +6,9 @@
     @import "_mobile/clases";
     @import "_mobile/infoyoga";
     @import "_mobile/nosotros";
+    .mapa {
+        width: $noventa;
+    }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 991px){
